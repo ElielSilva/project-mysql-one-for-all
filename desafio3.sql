@@ -1,0 +1,3 @@
+usuario
+qtde_musicas_ouvidas
+total_minutos
