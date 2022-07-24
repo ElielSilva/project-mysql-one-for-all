@@ -1,2 +1,5 @@
-SELECT  COUNT(users_id) AS 'quantidade_musicas_no_historico'
-FROM SpotifyClone.historic_playng group by users_id having users_id=3;
+SELECT art.full_name AS artista , alb.title_album AS album
+FROM SpotifyClone.album AS alb
+INNER JOIN SpotifyClone.artist AS art
+ON alb.artist_id=art.artist_id
+;
